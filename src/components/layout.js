@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Brand from "../components/brand"
-import * as V from "../styles/variables"
+import { Height } from "../styles/variables"
 
 const StyledLayout = styled.div`
   background-color: ${props => props.theme.backgroundColor || "white"};
@@ -36,7 +36,8 @@ const StyledLink = styled(Link)`
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   padding: 0 0.5rem;
-  height: 4.8rem;
+  height: ${Height.header};
+  /* height: 4.8rem; */
   /* font-size: 1.7rem; */
   font-size: 1.2rem;
 
@@ -53,7 +54,7 @@ const StyledLink = styled(Link)`
 `
 
 const Main = styled.main`
-  margin-top: ${V.Height.header};
+  margin-top: ${Height.header};
 `
 
 const layout = ({ children, theme }) => {

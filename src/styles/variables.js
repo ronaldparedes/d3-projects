@@ -1,3 +1,3 @@
 export const Height = {
-  header: "4.8rem",
+  header: "3.8rem",
 }

@@ -1,15 +1,22 @@
 import React from "react"
-import Header from "../components/header"
 import Layout from "../components/layout"
+import styled from "styled-components"
+import runViz from "../components/goldielocksViz"
+import { Height } from "../styles/variables"
 
 export default function Histogram() {
   return (
-    <Layout theme={{ backgroundColor: "pink" }}>
-      <div style={{ color: "purple" }}>
-        <Header headerText="Histogram" />
-        <p>Send us a message!</p>
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
-      </div>
+    <Layout theme={{ backgroundColor: "black" }}>
+      <iframe
+        src="/histogram/histogram.html"
+        title="D3 Histogram"
+        style={{
+          width: "100%",
+          height: `calc(100vh - ${Height.header})`,
+          border: "none",
+          overflow: "hidden",
+        }}
+      ></iframe>
     </Layout>
   )
 }
