@@ -7,4 +7,5 @@
 module.exports = {
   /* Your site config here */
   plugins: [`gatsby-plugin-styled-components`],
+  pathPrefix: "/d3-projects",
 }
