@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{K75G:function(e,t,r){"use strict";r.r(t),r.d(t,"default",(function(){return h}));var n=r("q1tI"),a=r.n(n),o=r("Bl7J"),c=r("HJKE"),i=r("Wbzz");function h(){return a.a.createElement(o.a,{theme:{backgroundColor:"black"}},a.a.createElement("iframe",{src:Object(i.c)("/histogram/histogram.html"),title:"D3 Histogram",style:{width:"100%",height:`calc(100vh - ${c.a.header})`,border:"none",overflow:"hidden"}}))}}}]);
+//# sourceMappingURL=component---src-pages-histogram-js-26e7f89948d36191e6d8.js.map
