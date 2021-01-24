@@ -5,14 +5,14 @@ import runViz from "../components/goldielocksViz"
 import { Height } from "../styles/variables"
 
 const StyledViz = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: black;
+  display: inline-block;
   padding-top: ${Height.header};
   font-family: Arial, Helvetica, sans-serif;
   #wrapper {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   .description {
     display: flex;

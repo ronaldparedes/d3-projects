@@ -8,8 +8,6 @@ const StyledLayout = styled.div`
   background-color: ${props => props.theme.backgroundColor || "white"};
   margin: 3rem auto;
   margin-bottom: 0;
-  max-width: 650;
-  padding: 0 1rem;
 `
 const StyledHeader = styled.header`
   display: block;
@@ -25,6 +23,7 @@ const StyledHeader = styled.header`
 const StyledMain = styled.div`
   display: flex;
   justify-content: space-between;
+  margin: 0 0.7rem;
 `
 const StyledMenu = styled.nav`
   display: flex;
@@ -35,11 +34,11 @@ const StyledLink = styled(Link)`
   justify-content: center;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  padding: 0 0.5rem;
   height: ${Height.header};
-  /* height: 4.8rem; */
-  /* font-size: 1.7rem; */
   font-size: 1.2rem;
+  @media (max-width: 720px) {
+    font-size: 1rem;
+  }
 
   &:focus,
   &:hover {
@@ -64,11 +63,11 @@ const layout = ({ children, theme }) => {
         <StyledMain>
           <Brand />
           <StyledMenu>
-            <StyledLink to="/" activeClassName="active">
-              Home
-            </StyledLink>
             <StyledLink to="/histogram" activeClassName="active">
               Histogram
+            </StyledLink>
+            <StyledLink to="/map" activeClassName="active">
+              Map
             </StyledLink>
             <StyledLink to="/goldielocks" activeClassName="active">
               Goldielocks

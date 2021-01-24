@@ -88,7 +88,7 @@ const graphData = colorData => {
       top: 30 * psRatio,
       right: 35,
       bottom: 55 * psRatio,
-      left: 50,
+      left: 40,
     },
   }
   dimensions.boundedWidth =

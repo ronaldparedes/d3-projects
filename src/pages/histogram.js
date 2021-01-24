@@ -1,7 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import styled from "styled-components"
-import runViz from "../components/goldielocksViz"
 import { Height } from "../styles/variables"
 
 export default function Histogram() {

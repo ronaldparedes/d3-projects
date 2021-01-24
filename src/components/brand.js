@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledBrand = styled.div`
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
-  margin: 0 3rem;
+  @media (max-width: 720px) {
+    font-size: 1.3rem;
+  }
 `
 const StyledLink = styled(Link)`
   color: rgba(255, 255, 255, 0.9);

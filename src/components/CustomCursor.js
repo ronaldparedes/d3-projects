@@ -8,10 +8,12 @@ const StyledCustomCursor = styled.div`
   height: 50px;
   top: -25px;
   left: -25px;
-  background-color: #fff;
-  border-radius: 20%;
+  background-color: palevioletred;
+  border-radius: 50%;
   position: absolute;
   mix-blend-mode: difference;
+  z-index: 999;
+  transform: translate(-100px, -100px);
 `
 
 const CustomCursor = () => {
