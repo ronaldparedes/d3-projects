@@ -13,6 +13,11 @@ const StyledBrand = styled.div`
 const StyledLink = styled(Link)`
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
+  transition: transform 200ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    color: #a1ecf7;
+  }
 `
 const Brand = () => (
   <StyledBrand>

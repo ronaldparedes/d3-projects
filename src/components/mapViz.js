@@ -1,9 +1,10 @@
 import * as d3 from "d3"
 import * as topojson from "topojson-client"
+import { withPrefix } from "gatsby"
 
 async function mapViz() {
   // 1. Access Data
-  const usTopo = await d3.json("/states-albers-10m.json")
+  const usTopo = await d3.json(withPrefix("/states-albers-10m.json"))
   const datasetCovid = await d3.json(
     "https://api.covidtracking.com/v1/states/current.json"
   )

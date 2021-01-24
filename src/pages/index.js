@@ -14,12 +14,13 @@ const Main = styled.div`
   color: #fff;
   background-color: #112739;
   width: 100%;
-  /* height: 100%; */
-  height: calc(100vmax - ${Height.header});
+  height: 100vh;
+  /* height: calc(100vmax - ${Height.header}); */
   .logoCont {
     position: absolute;
     width: 100vw;
-    height: calc(100vmax - ${Height.header});
+    height: 100vh;
+    /* height: calc(100vmax - ${Height.header}); */
     filter: drop-shadow(0 1vw 0.6vw rgba(200, 200, 256, 0.2));
   }
   .d3logo {

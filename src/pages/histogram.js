@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Height } from "../styles/variables"
+import { withPrefix } from "gatsby"
 
 export default function Histogram() {
   return (
     <Layout theme={{ backgroundColor: "black" }}>
       <iframe
-        src="/histogram/histogram.html"
+        src={withPrefix("/histogram/histogram.html")}
         title="D3 Histogram"
         style={{
           width: "100%",
