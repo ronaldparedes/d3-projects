@@ -39,11 +39,6 @@ const StyledLink = styled(Link)`
   @media (max-width: 720px) {
     font-size: 1rem;
   }
-
-  &:focus,
-  &:hover {
-    color: lightblue;
-  }
   &.active,
   &:focus,
   &:hover {
