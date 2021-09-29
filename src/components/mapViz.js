@@ -5,9 +5,11 @@ import { withPrefix } from "gatsby"
 async function mapViz() {
   // 1. Access Data
   const usTopo = await d3.json(withPrefix("/states-albers-10m.json"))
-  const datasetCovid = await d3.json(
-    "https://api.covidtracking.com/v1/states/current.json"
-  )
+  // const datasetCovid = await d3.json(
+  //   "https://api.covidtracking.com/v1/states/current.json"
+  // )
+  const datasetCovid = await d3.json(withPrefix("/covidData.json"))
+
   const stateAbr = {
     Alabama: "AL",
     Alaska: "AK",
@@ -61,7 +63,6 @@ async function mapViz() {
     Wyoming: "WY",
     "District of Columbia": "DC",
   }
-
   const stateNameAccessor = d => d.properties.name
   const stateIndexAccessor = d => {
     let stateIndex = null
